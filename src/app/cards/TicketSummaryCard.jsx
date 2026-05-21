@@ -78,12 +78,22 @@ function TicketSummaryCard({ context, onAlert }) {
       body: JSON.stringify({ contactId: context.crm.objectId, saveNote }),
     });
 
+    const text = await response.text();
+
     if (!response.ok) {
-      const data = await response.json();
-      throw new Error(data.error || `Request failed (HTTP ${response.status})`);
+      let errMsg = `HTTP ${response.status}`;
+      try {
+        const data = JSON.parse(text);
+        errMsg = data.error || errMsg;
+      } catch {
+        errMsg = `${errMsg}: ${text || "(empty response)"}`;
+      }
+      throw new Error(errMsg);
     }
 
-    return response.json();
+    if (!text) throw new Error("Empty response from server");
+
+    return JSON.parse(text);
   };
 
   const fetchSummary = async () => {
