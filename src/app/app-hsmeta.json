@@ -1,0 +1,24 @@
+{
+  "uid": "cx-sales-bridge",
+  "type": "app",
+  "config": {
+    "name": "CX Sales Bridge",
+    "description": "Surfaces CX support ticket summaries for the sales team directly on contact records.",
+    "distribution": "private",
+    "auth": {
+      "type": "static",
+      "requiredScopes": [
+        "crm.objects.contacts.read",
+        "tickets",
+        "timeline",
+        "oauth"
+      ],
+      "conditionallyRequiredScopes": []
+    },
+    "permittedUrls": {
+      "fetch": ["https://REPLACE_WITH_YOUR_VERCEL_URL"],
+      "iframe": [],
+      "img": []
+    }
+  }
+}

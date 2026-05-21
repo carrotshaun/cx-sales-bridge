@@ -1,0 +1,10 @@
+{
+  "uid": "cx-ticket-summary",
+  "type": "card",
+  "config": {
+    "name": "CX Ticket Summary",
+    "entrypoint": "/app/cards/TicketSummaryCard.jsx",
+    "location": "crm.record.sidebar",
+    "objectTypes": ["CONTACT"]
+  }
+}
