@@ -14,7 +14,7 @@ import {
 import { useState } from "react";
 
 // Set after Vercel deployment — replace with your actual Vercel URL
-const SUMMARIZE_URL = "https://REPLACE_WITH_YOUR_VERCEL_URL/api/summarize-tickets";
+const SUMMARIZE_URL = "https://cx-sales-bridge2.vercel.app/api/summarize-tickets";
 
 hubspot.extend(({ context, actions }) => (
   <TicketSummaryCard context={context} onAlert={actions.addAlert} />

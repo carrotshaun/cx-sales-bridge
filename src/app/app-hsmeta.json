@@ -16,7 +16,7 @@
       "conditionallyRequiredScopes": []
     },
     "permittedUrls": {
-      "fetch": ["https://REPLACE_WITH_YOUR_VERCEL_URL"],
+      "fetch": ["https://cx-sales-bridge2.vercel.app"],
       "iframe": [],
       "img": []
     }
