@@ -3,6 +3,6 @@
   "version": "0.0.1",
   "description": "CX Sales Bridge UI Extension",
   "dependencies": {
-    "@hubspot/ui-extensions": "^1.0.0"
+    "@hubspot/ui-extensions": "^0.14.0"
   }
 }
