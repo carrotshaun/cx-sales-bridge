@@ -75,7 +75,7 @@ function TicketSummaryCard({ context, onAlert }) {
     const contactId = context.crm.objectId;
     if (!contactId) throw new Error("No contact ID in context — card may not be on a contact record");
 
-    const response = await fetch(SUMMARIZE_URL, {
+    const response = await hubspot.fetch(SUMMARIZE_URL, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ contactId, saveNote }),
