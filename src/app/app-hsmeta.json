@@ -16,7 +16,7 @@
       "conditionallyRequiredScopes": []
     },
     "permittedUrls": {
-      "fetch": ["https://cx-sales-bridge2.vercel.app"],
+      "fetch": ["https://cx-sales-bridge2.vercel.app/api/summarize-tickets"],
       "iframe": [],
       "img": []
     }
